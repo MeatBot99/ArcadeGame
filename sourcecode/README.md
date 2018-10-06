@@ -8,6 +8,9 @@ Use the **arrow keys** to navigate this harrowing journey.
 Be careful though, for there are a seemingly infinite amount of _evil bugs_ that will take your life away the instant they touch you.
 Fortunately you have 3 lives, so there is a little room for error.
 # Dependencies
+
  -keyboard (no touch support yet)
+ 
  -javascript (needs to be able to run)
+ 
  -keen sense of timing(to avoid the bugs)
