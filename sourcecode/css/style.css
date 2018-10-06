@@ -1,0 +1,110 @@
+body {
+  text-align: center;
+  margin: 0;
+  font-family: monospace;
+  background-color: #aba;
+}
+
+.startpage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #fff;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  height: 100%;
+  position: absolute;
+}
+
+.startpage img{
+  cursor: pointer;
+}
+
+.startpage img:hover {
+  background-color: #fff;
+}
+
+.startpage img:active {
+  background-color: #bc5;
+}
+
+.charholder {
+  width: 500px;
+}
+
+.heading {
+  margin-left: auto;
+  margin-right: auto;
+  width: 505px;
+  font-size: 1.5em;
+}
+
+.container {
+  height: 635px;
+  width: 200px;
+  background-color: #9b3;
+  font-family: monospace;
+  top: 0;
+  border-radius: 10px;
+  border: solid #000 2px;
+}
+
+.container-left {
+  float: left;
+}
+
+.container-right {
+  float: right;
+}
+
+.winmodal,
+.losemodal {
+  display: none;
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  background-color: #00000095;
+  justify-content: center;
+  align-items: center;
+}
+
+.winmenu,
+.losemenu {
+  width: 40%;
+  height: 400px;
+  background-color: #43c;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 2em;
+}
+
+button {
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  background-color: #909090;
+}
+
+@media screen and (min-width: 320px) and (max-width: 930px){
+
+  .container {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1280px){
+
+  .winmenu,
+  .losemenu {
+    width: 505px;
+  }
+
+}
