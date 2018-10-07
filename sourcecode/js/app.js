@@ -108,9 +108,7 @@ let ringo= new Enemy(-50, 148, 450);
 let john= new Enemy(-50, 228, 300);
 
 //Push all enemies into array that is called from engine.js so they can be iterated.
-(function(){
-  allEnemies.push(george, ringo, john);
-})();
+allEnemies.push(george, ringo, john);
 
 //Lose a life when collision is detected. Global vairable used for ease of access.
 let life=3;
