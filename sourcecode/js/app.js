@@ -184,10 +184,10 @@ for(let character of characters){
   });
 }
 
-const landingPage= function landingPage(){
-  if(startPage.style.display="none"){
+const landingPage= function(){
+  if(startPage.style.display == "none"){
     startPage.style.display="flex";
-  }if(startPage.style.display="flex"){
+  }if(startPage.style.display == "flex"){
     startPage.style.display="none";
   }
 }
