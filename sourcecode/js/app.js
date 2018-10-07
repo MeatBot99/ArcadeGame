@@ -102,13 +102,11 @@ const restart= function(){
 }
 
 //The nefarious beatles are here to mildly inconvenience our hero.
-let allEnemies= [];
-let george= new Enemy(-50, 63, 400);
-let ringo= new Enemy(-50, 148, 450);
-let john= new Enemy(-50, 228, 300);
-
-//Push all enemies into array that is called from engine.js so they can be iterated.
-allEnemies.push(george, ringo, john);
+let allEnemies= [
+  new Enemy(-50, 63, 400),
+  new Enemy(-50, 148, 450),
+  new Enemy(-50, 228, 300)
+];
 
 //Lose a life when collision is detected. Global vairable used for ease of access.
 let life=3;
