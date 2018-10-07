@@ -143,7 +143,12 @@ const checkCollisions= function(){
 
   for(let i=0; i<numEnemies; i++){
     let enemy = allEnemies[i];
-    if(player.x < enemy.x+50 && player.x+40 > enemy.x && player.y < enemy.y+50 && player.y+50> enemy.y){
+    if(
+           player.x < enemy.x+50
+        && player.x+40 > enemy.x
+        && player.y < enemy.y+50
+        && player.y+50> enemy.y
+      ){
       player.reset();
       loseLife();
     }
