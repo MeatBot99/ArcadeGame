@@ -173,7 +173,7 @@ const showLose= function(){
 }
 
 //Character select screen. Choose your character wisely.
-let confirm= document.querySelector(".confirm");
+let confirmButton= document.querySelector(".confirm");
 let startPage= document.querySelector(".startpage");
 let characters= document.querySelectorAll(".startpage img");
 
@@ -192,7 +192,7 @@ const landingPage= function landingPage(){
   }
 }
 
-confirm.addEventListener("click", landingPage);
+confirmButton.addEventListener("click", landingPage);
 
 //Button listeners to reinitialize game mode.
 loseButton.addEventListener("click", showLose);
