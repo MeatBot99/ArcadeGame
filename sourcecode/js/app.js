@@ -138,8 +138,17 @@ const count= function(){
 
 //Checks to see if the enemies and player occupy the same place. If so, triggers player.reset.
 const checkCollisions= function(){
-  for(let i=0; i<=allEnemies.length-1; i++){
-    if(player.x < allEnemies[i].x+50 && player.x+40 > allEnemies[i].x && player.y < allEnemies[i].y+50 && player.y+50> allEnemies[i].y){
+
+  let numEnemies = allEnemies.length;
+
+  for(let i=0; i<numEnemies; i++){
+    let enemy = allEnemies[i];
+    if(
+           player.x < enemy.x+50
+        && player.x+40 > enemy.x
+        && player.y < enemy.y+50
+        && player.y+50> enemy.y
+      ){
       player.reset();
       loseLife();
     }
